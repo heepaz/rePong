@@ -56,10 +56,9 @@ class Pala(Element):
 
     if self.top() < 0:
       y = self.rect[3]/2
-      self.rect.center = (x,y)
     elif self.bottom() > Joc.HEIGHT:
       y = Joc.HEIGHT-self.rect[3]/2
-      self.rect.center = (x,y)
+    self.rect.center = (x,y)
 
     if self.amunt and self.avall:
       self.velocitat = [0,0]
